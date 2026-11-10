@@ -12,3 +12,9 @@ Target = the sample, Initial = the starting card, Fitted = the card at the end o
   w_critic    hash f3c5388 (2026-11-07)
 Page map of the closure PDFs: charged hadron 1 log pt, 2 log E, 3 eta; neutral hadron 4-6; electron 7-9; muon 10-12;
 photon 13-15; pair-mass response 16 electron, 17 muon, 18 charged hadron; 19 m_ee, 20 m_mumu, 21 m_4l.
+<loss>_<set>_<stage>.pdf  the parameter regressions of the same runs: <run>/<stage>/plots/parameter_regression.pdf
+  (plot parameters --trainable-only; pseudodata with the truth card, fullsim --no-target). <set> = pseudodata or pi;
+  the fullsim stage1_muons is the shared stage 1 of the chain (fullsim_guns/<loss>/<hash>/stage1_muons).
+  Pages: stage1_muons / stage2_chads / stage4_electrons: 1 tracking efficiency, 2 resolution a, 3 resolution b, 4 scale;
+  stage3_calo: 1 ECal scale, 2 ECal resolution (common), 3 ECal resolution (barrel/endcap), 4 ECal resolution (forward),
+  5 HCal scale, 6 HCal resolution.
