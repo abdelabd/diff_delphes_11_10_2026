@@ -121,26 +121,11 @@
 \end{frame}
 
 
-% Charged-hadron efficiency and resolution a, pseudodata beside fullsim: rows = losses, 4:3 tiles \ch tall.
-\newcommand{\ch}{2.25cm}
-\newcommand{\cw}{\dimexpr\ch*4/3\relax}
-\newcommand{\chrow}[2]{%
-  \rotatebox{90}{\makebox[\ch]{\footnotesize\textbf{#2}}}\hspace{0.1cm}%
-  \includegraphics[page=1,height=\ch]{figures/#1_pseudodata_stage2_chads.pdf}\hspace{\gap}%
-  \includegraphics[page=2,height=\ch]{figures/#1_pseudodata_stage2_chads.pdf}\hspace{\gap}%
-  \includegraphics[page=1,height=\ch]{figures/#1_pi_stage2_chads.pdf}\hspace{\gap}%
-  \includegraphics[page=2,height=\ch]{figures/#1_pi_stage2_chads.pdf}\par}
-\begin{frame}{Charged hadrons: efficiency and resolution $a$}
-\centering
-\makebox[0.45cm]{}%
-\makebox[\cw]{\footnotesize\textbf{Pseudodata: efficiency}}\hspace{\gap}%
-\makebox[\cw]{\footnotesize\textbf{Pseudodata: $a$}}\hspace{\gap}%
-\makebox[\cw]{\footnotesize\textbf{Fullsim $\pi^\pm$: efficiency}}\hspace{\gap}%
-\makebox[\cw]{\footnotesize\textbf{Fullsim $\pi^\pm$: $a$}}\par\vspace{0.05cm}
-\chrow{w1d}{Wasserstein-1D}\vspace{0.05cm}
-\chrow{likelihood}{Likelihood}\vspace{0.05cm}
-\chrow{w_critic}{Wasserstein critic}
-\end{frame}
+% Charged-hadron efficiency and resolution a, pseudodata then fullsim.
+\renewcommand{\figset}{pseudodata}
+\begin{frame}{Pseudodata: charged-hadron efficiency and resolution $a$}\pframe{stage2_chads}{1}{2}\end{frame}
+\renewcommand{\figset}{pi}
+\begin{frame}{Fullsim $\pi^\pm$: charged-hadron efficiency and resolution $a$}\pframe{stage2_chads}{1}{2}\end{frame}
 
 \renewcommand{\figset}{pseudodata}
 \paramslides{Pseudodata}
