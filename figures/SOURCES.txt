@@ -1,0 +1,14 @@
+Figures of this deck and where they come from (parnassus_parametric, /pscratch/sd/a/aelabd/parnassus_parametric).
+All are HZZ4l closure distributions of the four-stage chain (plot distributions on the stage4_electrons run:
+Target = the sample, Initial = the starting card, Fitted = the card at the end of the chain).
+<loss>_pseudodata.pdf  out/benchmarks/pseudodata/<loss>/<hash>/stage4_electrons/plots/distributions_pseudo_data_100k_param_config_all_HZZ4l.pdf
+  w1d         hash 92062f7 (2026-11-04)
+  likelihood  hash a2fb1d2_4x4 (2026-10-16)
+  w_critic    hash a2fb1d2_4x4 (2026-10-18)
+<loss>_pi.pdf  out/benchmarks/fullsim_guns/<loss>/<hash>/pi/stage4_electrons/plots/distributions_fullsim_100k_HZZ4l.pdf
+  (--init-defaults: Initial = default CMS card; samples gun_samples/1c8ef74; same files as the 11/09 deck)
+  w1d         hash f30f885 (2026-11-07; stage 2 with species: [charged_hadron])
+  likelihood  hash f3c5388 (2026-11-07)
+  w_critic    hash f3c5388 (2026-11-07)
+Page map of the closure PDFs: charged hadron 1 log pt, 2 log E, 3 eta; neutral hadron 4-6; electron 7-9; muon 10-12;
+photon 13-15; pair-mass response 16 electron, 17 muon, 18 charged hadron; 19 m_ee, 20 m_mumu, 21 m_4l.

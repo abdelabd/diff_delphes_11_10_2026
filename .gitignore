@@ -1,0 +1,12 @@
+.latexmkrc
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+diff_delphes*.pdf
+*.snm
+*.synctex.gz
+*.toc
+Makefile
