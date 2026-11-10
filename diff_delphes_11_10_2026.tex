@@ -69,7 +69,7 @@
 \vspace{0.4cm}\hspace{0.6cm}
 \begin{minipage}{0.85\linewidth}\raggedright
   {\color{uwpurple}\Huge\bfseries DiffDelphes}\\[0.3cm]
-  {\color{uwpurple}\Large Closures: pseudodata and fullsim $\pi^\pm$ gun}\\[0.4cm]
+  % {\color{uwpurple}\Large Closures: pseudodata and fullsim $\pi^\pm$ gun}\\[0.4cm]
   {\color{uwpurple}\large Abdel Elabd\\ 2026-11-10}\\[0.3cm]
   {\color{uwpurple}\rule{4cm}{2.5pt}}
 \end{minipage}
@@ -77,6 +77,24 @@
 \begin{center}\includegraphics[width=\linewidth,height=2.2cm,keepaspectratio]{figures/uw_block_logo.png}\end{center}
 \end{frame}
 
+\begin{frame}{Status}
+
+  \begin{itemize}
+    \item \href{https://github.com/Patchouligoo/parnassus_parametric}{parnassus\_parametric}
+    \begin{itemize}
+      \item Three objectives:
+      \begin{itemize}
+        \item 1-dimensional Wasserstein distance + chi-square effiency term
+        \item Analytical likelihood 
+        \item Wasserstein critic
+      \end{itemize}
+      \item Re-implemented validation suite against C++ Delphes
+    \end{itemize}
+    \item Pseudodata closure tests $\leftarrow$ Good
+    \item Rapid fullsim sample generation: \href{https://github.com/abdelabd/cmssw_fullsim_sample_generation}{cmssw\_fullsim\_sample\_generation}
+    \item Fullsim sequential fit $\leftarrow$ Needs work
+  \end{itemize}
+\end{frame}
 \renewcommand{\figset}{pseudodata}
 \closureslides{Pseudodata}
 
