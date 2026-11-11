@@ -120,7 +120,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Benchmark generation}
+\begin{frame}{Benchmark process}
   "Pseudodata": Delphes $\rightarrow$ Delphes \\
   "Fullsim": Delphes $\rightarrow$ CMSSW
 
@@ -148,10 +148,20 @@
 \paramslides{Pseudodata}
 
 \begin{frame}{Fullsim sequential tuning}
-  Adopting the same sequential tuning procedure as pseudodata. 
+  CMS approval pipeline is a bit slow for \textit{development}.
 
-  
-
+  \vspace{0.4cm}
+  \textbf{Generate our own samples?}
+  \begin{itemize}
+    \item Muons: $J/\psi, Z \rightarrow \mu^+\mu^-$
+    \item Charged hadrons: $\rho_0 \rightarrow \pi^+ \pi^-$, flattened $\pi^+ \pi^-$
+    \begin{itemize}
+      \item $K_S^0 \rightarrow \pi^+ \pi^-$ has mid-detector decays, displaced vertices
+    \end{itemize}
+    \item Calorimeters: QCD dijets, unflattened
+    \item Electrons: $J/\psi, Z \rightarrow e^+e^-$
+    \item Evaluation: $H \rightarrow ZZ^* \rightarrow 4\ell$
+  \end{itemize}
 
 \end{frame}
 
@@ -184,6 +194,7 @@
       \begin{itemize}
         \item Displaced tracks 
         \item Tracker discretization 
+        \item Merging collimated tracks 
       \end{itemize}
     \end{itemize}
 
